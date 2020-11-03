@@ -5,7 +5,7 @@
 session_start();
 
 //プリペアドステートメントでDB接続
-function connect_db($dbname, $host='localhost', $user='root', $password='root') {
+function connect_db($dbname, $host='xxxx', $user='xxxx', $password='xxxx') {
     $dsn = "mysql:dbname=${dbname};host=${host};charset=utf8";
     try {
         $dbh = new PDO($dsn, $user, $password,[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
